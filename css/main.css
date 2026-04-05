@@ -643,10 +643,6 @@
   display: flex;
   flex-direction: row;
 }
-.sheet.actor .tfm-actor-header img {
-  flex: 0;
-  background-color: var(--tfm-colour-primary, rgba(0, 0, 0, 0.2));
-}
 .sheet.actor .tfm-actor-header > .wrapper {
   display: flex;
   flex-direction: column;
@@ -656,11 +652,13 @@
   font-size: 36px;
   height: 1.2em;
 }
-.sheet.actor .actor-header .profile-img {
-  object-fit: fill;
+.sheet.actor .tfm-actor-header .profile-img {
+  object-fit: cover;
+  object-position: 50% 0%;
   flex: 0 0 100px;
   min-height: 100px;
   min-width: 100px;
+  background-color: rgba(0, 0, 0, 0);
 }
 .sheet.actor .tfm-actor-sheet-body {
   display: flex;

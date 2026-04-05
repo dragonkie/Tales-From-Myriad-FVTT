@@ -24,11 +24,6 @@
         display: flex;
         flex-direction: row;
 
-        img {
-            flex: 0;
-            background-color: var(--tfm-colour-primary, rgba(0, 0, 0, 0.2));
-        }
-
         >.wrapper {
             display: flex;
             flex-direction: column;
@@ -41,12 +36,14 @@
         }
     }
 
-    .actor-header {
+    .tfm-actor-header {
         .profile-img {
-            object-fit: fill;
+            object-fit: cover;
+            object-position: 50% 0%;
             flex: 0 0 100px;
             min-height: 100px;
             min-width: 100px;
+            background-color: rgba(0, 0, 0, 0);
         }
     }
 
