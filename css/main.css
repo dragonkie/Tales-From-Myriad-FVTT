@@ -924,9 +924,6 @@
 .tfm button:disabled {
   --tfm-input-background: var(--tfm-colour-input-background-disabled);
 }
-.tfm img {
-  --tfm-background: var(--tfm-colour-secondary);
-}
 .tfm .tfm-bar {
   --tfm-bar-bg: var(--tfm-colour-secondary);
 }
