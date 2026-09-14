@@ -423,9 +423,9 @@ export default function TfmSheetMixin(Base) {
                     jQuery: false,
                     onClose: () => { },
                     onOpen: element => {
-                        const item = fromUuidSync(element.dataset.uuid);
-                        if (!item) return;
-                        ui.context.menuItems = this._getItemContextOptions(item);
+                        const document = fromUuidSync(element.dataset.uuid);
+                        if (!document) return;
+                        ui.context.menuItems = this._getItemContextOptions(document);
                     }
                 })
         }
