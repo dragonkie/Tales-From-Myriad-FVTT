@@ -430,7 +430,8 @@ export default function TfmSheetMixin(Base) {
                 })
         }
 
-        _getItemContextOptions(document) {
+        _getDocumentContextOptions(document) {
+            if (!document) return false;
             const isOwner = document.isOwner;
             const isCharacter = document.actor.type === "character";
             const isNpc = document.actor.type === "npc";
